@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<!--Icons-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="black">
+    <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper black">
+            <a href="#" class="brand-logo center">BEGINNER</a>
+        </nav>
+    </div>
+</div>
+
+    <div class="container">
+        <div class="carousel">
+        <h1 class="amber-text"></h1>
+        <a href="#one!" class="carousel-item">
+         <img src="Cuteness/Anyaa.jpg" alt="">>
+        <a href="#two!" class="carousel-item">
+          <img src="Cuteness/bojji.jpg" alt="">>
+        <a href="#three!" class="carousel-item">
+          <img src="Cuteness/alas.jpg" alt="">>
+         <a href="#four!" class="carousel-item">
+          <img src="Cuteness/eri.jpg" alt="">>
+         </a>
+    </div>
+    
+        
+    <div class="row">
+        <div class="col s8 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="Cuteness/Anyaa.jpg" alt="" class="responsive-img materialboxed">
+              <span class="card-title">SPYxFamily</span>
+            </div>
+            <div class="card-content">
+              <p>Spy x Family (stylized as SPYxFAMILY and pronounced "Spy Family") 
+                is a Japanese manga series written and illustrated by Tatsuya Endo.</p>
+            </div>
+            <div class="card-action">
+                <a href="modal" class="btn waves-effect waves- modal-trigger">This is a link</a>
+            </div>
+          </div>
+        </div>
+
+            <div class="col s10 m5">
+              <div class="card">
+                <div class="card-image">
+                  <img src="Cuteness/bojji.jpg"alt="" class="responsive-img materialboxed">
+                  <span class="card-title">Rankings of Kings</span>
+                </div>
+                <div class="card-content">
+                  <p>Ranking of Kings (王様ランキング, Ōsama Rankingu) is a Japanese fantasy manga series written and illustrated by Sōsuke Tōka.
+                     It has been serialized online via Echoes' user-submitted Manga Hack website since May 2017 and has been collected in fourteen tankōbon volumes by Enterbrain.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+                <div class="col s10 m5">
+                  <div class="card">
+                    <div class="card-image">
+                      <img src="Cuteness/alas.jpg"alt="" class="responsive-img materialboxed">
+                      <span class="card-title">The Devil is a part timer</span>
+                    </div>
+                    <div class="card-content">
+                      <p>The Devil Is a Part-Timer is a Japanese light novel series written 
+                        by Satoshi Wagahara, with illustrations by Oniku (written as 029).</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s10 m5">
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="Cuteness/eri.jpg"alt="" class="responsive-img materialboxed">
+                          <span class="card-title">My Hero Academia</span>
+                        </div>
+                        <div class="card-content">
+                          <p>My Hero Academia (僕ぼくのヒーローアカデミア Boku no Hīrō Akademia?) is an anime series produced by Toho and Bones based on the manga by Kohei Horikoshi. 
+                            It was announced in Issue 49, 2015 of Weekly Shonen Jump.</p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col s12 ">
+                      <div class="slider">
+                        <ul class="slides">
+                          <li>
+                            <img src="Cuteness/spy.jpg" alt="">
+                            <div class="caption center-align">
+                            </div>
+                          </li>
+                          <li>
+                            <img src="Cuteness/ranking.jpg" alt="">
+                            <div class="caption center-align">
+                            </div>
+                          </li>
+                          <li>
+                            <img src="Cuteness/hero.jpg" alt="">
+                            <div class="caption center-align">
+                            </div>
+                          </li>
+                          <li>
+                            <img src="Cuteness/devil.jpg" alt="">
+                            <div class="caption center-align">
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+
+
+
+
+
+
+                    <!--End of the container-->
+</div>
+    <!--Jquery CDN-->
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" 
+integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            //Carousel init
+        $('.carousel').carousel();
+        $('.materialboxed').materialbox();
+        $('.modal').modal();
+        $('.slider').slider({
+          indicator:true,
+          height: 500,
+          duration: 100,
+
+        });
+        });
+            //Fullwidth init
+            $('.carousel.carousel-slider').carousel(); ({
+                fullWidth: true,
+                indicators: true
+            });
+    </script>
+
+</body>
+</html>

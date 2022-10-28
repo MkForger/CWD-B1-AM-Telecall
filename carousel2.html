@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<!--Icons-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Carousel</title>
+</head>
+<body class="grey darker-3">
+    
+
+<div class="container black">
+    <div class="carousel">
+    <h1 class="amber-text">MOOD</h1>
+    <a href="#one!" class="carousel-item">
+        <img src="Images/erik.jpg" alt="">
+    <a href="#two!" class="carousel-item">
+        <img src="Images/gracia.jpg" alt="">
+    <a href="#three!" class="carousel-item">
+        <img src="Images/tim.jpg" alt="">
+    </a>
+</div>
+<br><br><br>
+
+<!--Full width carousel-->
+<div class="carousel carousel-slider">
+    <a href="#one!" class="carousel-item">
+        <img src="Images/erik.jpg" alt="">
+    <a href="#two!" class="carousel-item">
+        <img src="Images/gracia.jpg" alt="">
+    <a href="#three!" class="carousel-item">
+        <img src="Images/tim.jpg" alt="">
+    </a>
+
+</div>
+
+<br><br><br>
+
+<!--Special Options-->
+<div class="carousel carousel-slider center">
+    <div class="carousel-fixed-item center">
+        <a class="btn waves-effect white grey-text darken-text-2">Button</a>
+    </div>
+    <div class="carousel-item grey white-text" href="#one!">
+        <h2>MOOD</h2>
+        <p class="black-text">--</p>
+    </div>
+     <div class="carousel-item grey white-text" href="#two!">
+        <h2>MOOD</h2>
+        <p class="black-text">//</p>
+     </div>
+     <div class="carousel-item grey white-text" href="#three!">
+        <h2>MOOD</h2>
+        <p class="black-text">~~</p>
+     </div>
+</div>
+
+<br><br><br>
+
+
+<!--Jquery CDN-->
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" 
+integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            //Carousel init
+    $('.carousel').carousel();
+        });
+            //Fullwidth init
+            $('.carousel.carousel-slider').carousel(); ({
+                fullWidth: true,
+                indicators: true
+  });
+    </script>
+</body>
+</html>
